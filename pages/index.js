@@ -26,12 +26,12 @@ export default function Home({ posts }) {
         <br />
         <h2>All Post</h2>
         <br />
-        {posts.map((val, i) => {
+        {posts.map((post) => {
           return (
-            <div key={i}>
-              <h3>{val.title} </h3>
-              <img src={val.coverPhoto.url} alt="Image Cover" />
-              <p>{val.content}</p>
+            <div >
+              <h3>{post.title} </h3>
+              <img src={post.coverPhoto.url} alt="Image Cover" />
+              <p>{post.content}</p>
             </div>
           );
         })}
