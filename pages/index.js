@@ -31,7 +31,7 @@ export default function Home({ posts }) {
             <div key={i}>
               <h3>{val.title} </h3>
               <img src={val.coverPhoto.url} alt="Image Cover" />
-              <p>{val.content.html}</p>
+              <p>{val.content}</p>
             </div>
           );
         })}
