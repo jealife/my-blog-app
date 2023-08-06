@@ -13,7 +13,7 @@ const GET_ALL_SLUGS = gql`
 `;
 
 const GET_ALL_POSTS = gql`
-  {
+ query {
     posts {
       id
       title
