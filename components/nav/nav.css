@@ -1,0 +1,115 @@
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    padding: 1rem;
+   
+}
+nav{
+    
+    border-bottom: 1px solid #a6b4c8de;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    top: 10px;
+    border-radius: 50px;
+    padding: 1rem  1.8rem ;
+    background: #ecf0f3;
+}
+
+
+.menu .link-item {
+    margin-left: 2rem;
+    color: #07080c;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    transition: all .5s;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu .link-item:hover {
+    color: #2A46FF;
+    border-bottom: #2A46FF 1px solid;
+}
+a{
+    text-decoration: none;
+}
+
+.active {
+    color: #2A46FF;
+    border-radius:0 0 0 .5rem;
+    border-bottom: #2A46FF 1px solid;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon box-icon{
+    color: #07080c;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* .active {
+    border-bottom: #90bfce solid 0.5px;
+    color: #0e0e0e;
+    border-radius: 1rem;
+} */
+
+.logo {
+    width: 35px;
+}
+@media (max-width: 769px){
+    nav{
+        width: 100%;
+        border-radius: 0px;
+        top: 0;
+        justify-content: space-between;
+
+    }
+    .menu-icon {
+        display: block;
+    }
+    /* Menu  */
+    .menu-dropdown {
+        width: 200px;
+        height: max-content;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 15px 15px 15px 0 ;
+        top: 100%;
+        right: -300px;
+        position: absolute;
+        border-radius: 0 0 0 24px ;
+        border: 1px solid #a6b4c8de;
+        background-color: #ecf0f3a6;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        transition: all .5s ease-in-out;
+    }
+    .menu-dropdown.showMenu{
+        right: 0px;
+    }
+
+    /*  hero  */
+    .hero-section {
+        flex-direction: column;
+    }
+
+
+     
+
+}
